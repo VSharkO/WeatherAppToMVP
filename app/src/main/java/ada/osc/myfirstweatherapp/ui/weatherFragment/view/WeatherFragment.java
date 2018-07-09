@@ -51,7 +51,10 @@ public class WeatherFragment extends Fragment implements WeatherFragmentView {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initUI(view);
+        initPresenter();
+    }
 
+    private void initPresenter() {
         presenter = new WeatherFragmentPresenterImpl(this, App.getInstance().getNetworkingHelper());
     }
 

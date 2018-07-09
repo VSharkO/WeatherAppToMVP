@@ -26,6 +26,4 @@ public class MainActivityPresenterImpl implements MainActivityPresenter {
     public ArrayList<LocationWrapper> getLocations() {
         return model.getLocations();
     }
-
-
 }

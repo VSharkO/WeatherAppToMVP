@@ -31,11 +31,16 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
         setContentView(R.layout.activity_main);
         initUI();
         initToolbar();
+        initPresenter();
 
-        presenter = new MainActivityPresenterImpl(this);
+
         adapter = new CustomViewPagerFragmentAdapter(getSupportFragmentManager());
         adapter.setAdapterData(presenter.getLocations());
         viewPager.setAdapter(adapter);
+    }
+
+    private void initPresenter() {
+        presenter = new MainActivityPresenterImpl(this);
     }
 
     @Override

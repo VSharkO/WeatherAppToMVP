@@ -37,7 +37,7 @@ public class AddLocationFragment extends Fragment implements AddLocationFragment
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initUI(view);
-        initPresenter(new AddLocationFragmentPresenterImpl(this));
+        initPresenter();
     }
 
     @Override
@@ -68,9 +68,8 @@ public class AddLocationFragment extends Fragment implements AddLocationFragment
         mAddLocationButton.setOnClickListener(this);
     }
 
-    private void initPresenter(AddLocationFragmentPresenter presenter){
-
-        this.presenter = presenter;
+    private void initPresenter(){
+        presenter = new AddLocationFragmentPresenterImpl(this);
     }
 
     @Override

@@ -24,13 +24,9 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         sInstance = this;
-
         retrofit = provideRestClient();
-
         ApiService service = createWeatherAPIService(retrofit);
-
         networkingHelper = new NetworkingHelperImpl(service);
     }
 
