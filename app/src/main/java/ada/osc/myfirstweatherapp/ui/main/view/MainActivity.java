@@ -11,8 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import ada.osc.myfirstweatherapp.R;
-import ada.osc.myfirstweatherapp.ui.addNewLocation.view.AddNewLocationActivity;
 import ada.osc.myfirstweatherapp.ui.adapters.CustomViewPagerFragmentAdapter;
+import ada.osc.myfirstweatherapp.ui.addLocation.activity.AddNewLocationActivity;
 import ada.osc.myfirstweatherapp.ui.main.presenter.MainActivityPresenter;
 import ada.osc.myfirstweatherapp.ui.main.presenter.MainActivityPresenterImpl;
 

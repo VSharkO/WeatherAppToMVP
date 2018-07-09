@@ -13,6 +13,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * Created by Filip on 01/04/2016.
  */
+
+//TODO add database cacheing
 public class App extends Application {
 
     private static App sInstance;

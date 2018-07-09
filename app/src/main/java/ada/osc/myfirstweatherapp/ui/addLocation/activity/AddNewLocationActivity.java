@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import ada.osc.myfirstweatherapp.R;
-import ada.osc.myfirstweatherapp.ui.addLocation.fragment.AddLocationFragment;
+import ada.osc.myfirstweatherapp.ui.addLocation.fragment.view.AddLocationFragment;
 
 /**
  * Created by Filip on 10/02/2016.
