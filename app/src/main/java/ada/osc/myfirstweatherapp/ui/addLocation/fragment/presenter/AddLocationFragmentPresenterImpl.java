@@ -11,7 +11,7 @@ public class AddLocationFragmentPresenterImpl implements AddLocationFragmentPres
     private Model model;
 
     public AddLocationFragmentPresenterImpl(AddLocationFragment view) {
-        this.view = view;
+        setView(view);
         model = Model.getInstance();
     }
 
